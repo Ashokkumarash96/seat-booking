@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-font: rgb(255, 255, 255);
+  --color-bg: rgb(7, 24, 49);
+  --color-selected: rgba(20, 16, 136, 0.693);
+  --color-available: rgb(13, 135, 13);
+  --color-occupied: rgb(199, 26, 26);
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-font);
+}
+
+.selectMovies {
+  padding: 1rem;
+}
+
+select {
+  width: 15rem;
+  padding: 5px;
+  border-radius: 4px;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.showcase {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1.2rem 0rem;
+}
+
+.showcaseContainer {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.seat {
+  margin: 1rem;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--color-available);
+}
+
+.seatContainer .seat:hover {
+  cursor: pointer;
+}
+
+.seatContainer .seat.available {
+  cursor: default;
+}
+
+.selected {
+  background-color: var(--color-selected);
+}
+
+.occupied {
+  background-color: var(--color-occupied);
+}
+
+.screenContainer {
+  perspective: 900px;
+}
+
+.screen {
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 20px;
+  margin: 2rem 0rem;
+  transform: rotateX(-45deg);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1rem 0rem;
+}
+
+.seat:nth-of-type(3) {
+  margin-left: 2.5rem;
+}
+
+.seat:nth-of-type(7) {
+  margin-left: 2.5rem;
+}
+
+.description {
+  align-items: center;
+  margin-left: 10rem;
+
+}

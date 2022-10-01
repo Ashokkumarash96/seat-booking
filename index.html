@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="select-movies" id="select-movies"></div>
+      <div class="selectMovies" id="selectMovies">
       <label for="movies">Movies to Watch</label>
       <select name="movies" id="movies">
         <option value="150">Ponniyin selvan - I</option>
@@ -20,5 +20,86 @@
         <option value="0">She-Hulk</option>
       </select>
     </div>
+    <div class="showcase">
+      <div class="showcaseContainer">
+        <div class="seat available"></div>
+        <small>Available</small>
+      </div>
+      <div class="showcaseContainer">
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </div>
+      <div class="showcaseContainer">
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </div>
+    </div>
+    <div class="screenContainer"><div class="screen"></div></div>
+    <div class="seatContainer" id="select-seat">
+      <div class="row">
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+       <div class="message">
+            <p class="description">
+                Your selected Tickets <span class="bold" id="totalSeat">0</span> <br> Price of selected seats   ₹ <span class="bold" id="totalCost">0</span>
+            </p>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
