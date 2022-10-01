@@ -29,6 +29,9 @@ movieEl.addEventListener("change", (e) => {
 
 selectSeatEl.addEventListener("click", (e) => {
   if (e.target.classList.contains("seat")) {
+    console.log;
+  }
+  if (e.target.classList.contains("seat")) {
     if (!e.target.classList.contains("occupied")) {
       e.target.classList.toggle("selected");
 
